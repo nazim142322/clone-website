@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .language-selection {
+            margin: 20px;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .selectBox {
+            border: 1px solid red;
+            width: fit-content;
+            padding: 4px;
+            cursor: pointer; /* Set cursor to pointer */
+        }
+
+        select {
+            padding: 4px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-selection">
+        <label for="language-select">Select Language:</label>
+        <div class="selectBox" onclick="openDropdown()">
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>               
+            </select>
+        </div>
+    </div>
+
+    <script>
+        function openDropdown() {
+            var selectBox = document.getElementById('language-select');
+            selectBox.click(); // Simulate a click event on the select box
+        }
+    </script>
+</body>
+</html>
