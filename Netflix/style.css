@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+body {
+  background: #000000;
+}
 main {
   min-height: 100vh;
   background-image: url("assests//images/bg.jpg");
@@ -65,10 +68,11 @@ header nav .logo img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, -40%);
   text-align: center;
   font-family: "Martel Sans", sans-serif;
   width: 100%;
+  padding: 10px;
 }
 .heroContent > h1 {
   font-size: 50px;
@@ -140,6 +144,57 @@ label {
   flex-basis: 200px;
   cursor: pointer;
 }
-@media(max-width: 768px){
-  
+.devider {
+  margin-bottom: 200px;
+  height: 5px;
+  background: linear-gradient(
+    to right,
+    rgba(33, 13, 22, 1) 16%,
+    rgba(184, 40, 105, 1),
+    rgba(229, 9, 20, 1),
+    rgba(184, 40, 105, 1),
+    rgba(33, 13, 22, 1) 84%
+  );
+  border-radius: 50%;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .heroContent > h1 {
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 600;
+  }
+  .heroContent .subscription {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .subscribe button {
+    height: 55px;
+  }
+}
+
+/* .default-ltr-cache-1j6jwcf {
+  line-height: 1;
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  font-weight: 700;
+  color: rgb(65, 65, 65);
+  -webkit-text-stroke: 0.25rem rgb(255, 255, 255);
+  /* text-shadow: 0 0 1.5rem rgba(0,0,0,0.5); */
+} */
+
+
+
+@media (max-width: 468px) {
+  .heroContent > h1 {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 500;
+  }
+
+  .heroContent .subscription {
+    font-size: 20px;
+    font-weight: 400;
+  }
 }
