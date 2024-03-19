@@ -13,6 +13,7 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 100%;
 }
 main .overlay {
   width: 100%;
@@ -158,6 +159,35 @@ label {
   border-radius: 50%;
   width: 100%;
 }
+.sectionJoin {
+  color: white;
+  /* border: 1px solid red; */
+  margin-bottom: 200px;
+  width: 80%;
+  margin: 200px auto;
+}
+.join {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 250px;
+  /* width: calc(50% - 10px); */
+  /* flex-grow: 1; */
+  justify-content: space-between;
+  border-radius: 12px;
+  background: linear-gradient(149deg, #192247 0%, #210e17 99.08%);
+}
+.card svg {
+  align-self: end;
+  margin-top: 80px;
+}
+
 @media (max-width: 768px) {
   .heroContent > h1 {
     font-size: 40px;
@@ -182,10 +212,6 @@ label {
   color: rgb(65, 65, 65);
   -webkit-text-stroke: 0.25rem rgb(255, 255, 255);
   /* text-shadow: 0 0 1.5rem rgba(0,0,0,0.5); */
-} */
-
-
-
 @media (max-width: 468px) {
   .heroContent > h1 {
     font-size: 30px;
@@ -196,5 +222,9 @@ label {
   .heroContent .subscription {
     font-size: 20px;
     font-weight: 400;
+  }
+}
+@media (max-width: 1330px) {
+  .card {
   }
 }
